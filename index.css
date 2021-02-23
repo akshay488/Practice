@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:'Commissioner', sans-serif;
+
+}
+body p{
+font-size: 1.3vw;
+font-weight: ;
+line-height: 2vw;
+color:grey;
+}
+body h4{
+font-size: 2vw;
+}
+:root{
+  --primary1: hsl(176, 50%, 47%);
+  --primary2: hsl(176, 72%, 28%);
+  --neutral1:  hsl(0, 0%, 0%);
+  --neutral2: hsl(0, 0%, 48%);
+}
+  .wrapper {
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: #eee;
+    grid-row-gap: 10px;
+}
+  .wrapper .mbm, .pledge,.about{
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+
+
+  }
+  .wrapper .header{
+    grid-column: 1/span 12;
+    grid-row: 1/span 4;
+  }
+  .wrapper .mbm{
+    grid-column: 4/span 6;
+    grid-row: 4/span 2;
+  }
+  .wrapper .pledge{
+    grid-column: 4/span 6;
+    grid-row: 6/span 1;
+  }
+  .wrapper .about{
+    grid-column: 4/span 6;
+    grid-row: 8/span 5;
+  }
+  img{
+      max-width: 100%;
+      height: auto;
+
+    }
+
+    /* header menu */
+    .logo{
+      position: absolute;
+      top:1%;
+      right:10%;
+      left: 10%;
+      display: flex;
+      margin: 10px;
+      color: white;
+    }
+    /* mbm head */
+
+    .favicon{
+      position: relative;
+    }
+    .favicon img{
+      width: 35px;
+      position: absolute;
+      top:-2.3em;
+      left: 45%;
+    }
+    .sppt{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sppt > .supt{
+      text-decoration: none;
+      border: none;
+       background-color: var(--primary1);
+       color: white;
+     border-radius: 25px;
+     padding: 10px ;
+
+    }
+
+    .bkmk{
+     border-radius: 25px;
+     background-color: #eee;
+     color:var(--primary1);
+     padding: 0 10px 0 0;
+     text-decoration: none;
+     text-align: center;
+     border: none;
+     display: flex;
+
+     align-items: center;
+    }
+    .svg-img {
+
+     height:80%;
+     width: 80%;
+
+    }
+
+    .details{
+      display: flex;
+      flex-wrap:wrap;
+    }
+    .details div{
+      text-align: center;
+      padding:10px;
+      border-right: 1px solid #ddd;
+      width:33.33%;
+    }
+
+    .details div:last-child{
+      border: none;        }
+    /* about the project */
+    .about div{
+      margin-bottom: 2vw;}
+
+    .bamboo-stand{
+      display: grid;
+      padding: 10px;
+      grid-template-columns:repeat(6, 1fr);
+      border:1px solid #ddd;
+      border-radius:10px;
+    }
+
+    .bamboo-stand .title-l{
+      grid-column: 1/span 4;
+    }
+    .bamboo-stand .title-r{
+      grid-column: 5/span 2;
+
+
+    }
+    .bamboo-stand .content{
+      grid-column: 1/span 6;
+      grid-row: 2/span 5;
+    }
+    .bamboo-stand .amt{
+      grid-column: 1/span 4;
+
+    }
+    .bamboo-stand .btn{
+      grid-column: 5/span 2;
+      border-radius: 25px;
+      background-color: var(--primary1);
+      color:#fff;
+      font-size: 1.5vw;
+      padding:  10px ;
+      text-decoration: none;
+      border: none;
+    }
